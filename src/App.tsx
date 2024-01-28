@@ -15,14 +15,14 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <a target='_blank' href="https://majangstories.blogspot.com/" className={`flex w-fit-content hover:opacity-70 hover:cursor-pointer`}>
-          Our Blog v1
-        </a>
-
+      <div>
+        <img width={250} height={200} src={"./images/time.png"} alt="image" />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <a target='_blank' href="https://majangstories.blogspot.com/p/sitemap.html">
+          Our Blog v2
+        </a>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

@@ -8,7 +8,7 @@ export default defineConfig({
     VitePWA({
       workbox: {
         globPatterns: ["**/*.{js,ts,tsx,css,html,ico,png,svg}"],
-        cacheId: 'cache-v1',
+        cacheId: 'cache-v2',
         skipWaiting: true,
         clientsClaim: true,
         runtimeCaching: [
