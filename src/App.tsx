@@ -1,8 +1,17 @@
+import React from 'react';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+
+  React.useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+      });
+    }
+  }, []);
 
   return (
     <>
@@ -17,11 +26,12 @@ function App() {
       <h1>Vite + React</h1>
       <div>
         <img width={250} height={200} src={"./images/time.png"} alt="image" />
+        <img width={250} height={200} src={"./images/time.png"} alt="image" />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
         <a target='_blank' href="https://majangstories.blogspot.com/p/sitemap.html">
-          Our Blog v6 Edit Page
+          Our Blog v7
         </a>
       </div>
 
