@@ -11,7 +11,7 @@ export default defineConfig({
         cacheId: 'cache-v3',
         skipWaiting: true,
         clientsClaim: true,
-        navigateFallback: undefined,
+        navigateFallback: '/index.html',
         runtimeCaching: [
           {
             urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
