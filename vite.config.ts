@@ -8,14 +8,13 @@ export default defineConfig({
     VitePWA({
       workbox: {
         globPatterns: ["**/*.{js,ts,tsx,css,html,ico,png,svg}"],
-        cacheId: 'cache-v4',
-        skipWaiting: true,
+        cacheId: 'cache-v5',
+        skipWaiting: false,
         clientsClaim: true,
-        navigateFallback: '/index.html',
         runtimeCaching: [
           {
             urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-            handler: 'CacheFirst',
+            handler: 'StaleWhileRevalidate',
             options: {
               expiration: {
                 maxEntries: 10,
