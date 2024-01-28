@@ -21,10 +21,11 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
         <a target='_blank' href="https://majangstories.blogspot.com/p/sitemap.html">
-          Our Blog v5 Edit Page
+          Our Blog v6 Edit Page
         </a>
       </div>
 
+      <img width={250} height={200} src={"./images/time.png"} alt="image" />
       <img width={250} height={200} src={"./images/time.png"} alt="image" />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
